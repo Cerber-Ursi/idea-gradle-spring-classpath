@@ -1,0 +1,3 @@
+include ':app'
+include ':compile_dependency'
+include ':runtime_dependency'

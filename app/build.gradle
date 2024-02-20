@@ -1,0 +1,12 @@
+tasks.register('localJar', Copy) {
+    group 'build'
+    from bootJar
+    into buildDir
+    rename { "app.jar" }
+}
+
+dependencies {
+    implementation(project(":compile_dependency"))
+
+    implementation("org.springframework.boot:spring-boot-autoconfigure")
+}

@@ -1,0 +1,8 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation(project(":runtime_dependency"))
+    api("commons-io:commons-io:2.7")
+}

@@ -1,0 +1,19 @@
+plugins {
+    id 'org.springframework.boot' version '3.2.2' apply false
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom('org.springframework.boot:spring-boot-dependencies:3.2.2')
+        }
+    }
+}
